@@ -42,7 +42,7 @@ The project leverages several JavaScript functions to accomplish the task:
 
 ## Live Demo
 
-Check out the live version of the project here: [Hot Gadgets - Phone Search Platform](https://your-app-live-link.com)
+Check out the live version of the project here: [Hot Gadgets - Phone Search Platform](https://phone-hunt-aniket.netlify.app/)
 
 ## Technologies Used
 
