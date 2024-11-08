@@ -156,6 +156,7 @@ body {
         color: #1D2735;
     }
 }
+
 #phoneList{
     width: 80%;
     margin: 0 auto;
@@ -288,6 +289,8 @@ footer{
     background-color: #cbd1db;
     color: #1D2735;
   }
+
+
   
 
 @media (max-width: 770px) {
