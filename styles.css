@@ -1,367 +1,263 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
-    width: 100vw;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-}
-.main{
-    width: 100%;
-    color: #A6ADBA;
-}
+    font-family: "Poppins", sans-serif;
+    background-color: #3083ff0f;
+  }
 
+#header{
+    padding: 2rem;
+    background-color: #0d6efd0d;
+}
+button:active{
+    transform: scale(0.92);
+    transition: 0.1s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #4a07da;
+}
+.button{
+    font-size: 13px;
+    font-weight: 600;
+    width: 10%;
+    height: 50px;
+    cursor: pointer;
+    background-color: #570df8;
+    color: #fff;
+    border: transparent;
+    border-radius: 10px;
+    /* box-shadow:  0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3); */
+}
+.hero-header{
+    display: flex;
+    justify-content: space-between;
+    
+}
 .hero{
-    width: 100%;
-    height: 100vh;
-    background-color: #1D2735;
-    color: #A6ADBA;
+ margin-top: 4rem;
+ margin-bottom: 3rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
-.nav{
-    width: 80%;
-
-    height: 20%;
-    margin: 0 auto;
+.hero h1{
+ font-size: 3.5rem;
+ margin-bottom: 1rem;
+}
+.hero p{
+  font-size: 20px;
+}
+#home-btn{
+    margin-top: 2rem;
+}
+.hero-phones{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &>h2{
-        margin: 0;
-        font-size: 2rem;
-        font-weight: 800;
-    }
-    &>.nav-btn{
-        height: 40%;
-        padding: 5px 10px;
-        font-size: 1.2rem;
-        color: #1D2735;
-        font-weight: 600;
-        background-color: #A6ADBA;
-        border: none;
-        border-radius: 10px;
-        transition: 0.2s ease-in-out;
-        &:hover{
-            background-color: #cbd1db;
-            color: #1D2735;
-        }
-        &:active{
-            background-color: #8395A8;
-            color: #A6ADBA;
-        }
-    }
-
-}
-.herobox{
-    width: 60%;
-    margin:0 auto;
-    text-align: center;
-    &>h1{
-        margin: 20px 0;
-        font-size: 3.5rem;
-        font-weight: 800;
-        color: #A6ADBA;
-    }
-    &>p{
-        font-size: 1.3rem;
-        margin: 20px 0;
-        font-weight: 400;
-        color: #A6ADBA;
-    }
-    &>button{
-        padding: 10px 20px;
-        font-size: 1.2rem;
-        color: #A6ADBA;
-        font-weight: 600;
-        background-color: #5d19db;
-        border: none;
-        border-radius: 10px;
-        transition: 0.2s ease-in-out;
-        &:hover{
-            background-color: #7548f0;
-            color: #A6ADBA;
-        }
-        &:active{
-            background-color: #cbd1db;
-            color: #1D2735;
-        }
-    }
-}
-.midlecontainer{
-    width: 100%;
-    background-color: #1D232A;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.searchbar{
-    width: 80%;
-   
-    padding: 300px 0 20px 0;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
- &>h2{
-     margin: 0;
-     font-size: 2.5rem;
-     font-weight: 800;
-     color: #A6ADBA;
- }
-}
-.searchcontainer{
-    width: 100%;
-    margin: 20px auto;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 5px;
+    align-items: center;
+}
+.second{
+  width: 30%;
+  margin-bottom: 4rem;
+}
+
+#Search-section{
+    padding: 2rem;
+}
+
+#results{
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+}
+.search-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
-#searchInput{
-    width: 30%;
-    padding: 10px;
+.search-area-input{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+#searchinput{
+    height: 50px;
+    width: 70%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+#searchbtn{
+    padding: 1rem;
+    width: 25%;
+    cursor: pointer;
+    background-color: rgb(50, 50, 197);
+    color: #fff;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow:  0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+}
+
+.product{
+    margin-top: auto;
+    margin-bottom: auto;
+   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+   width: 30% ;
+   height: 550px;
+   background-color: #fff;
+   border-radius: 20px;
+   text-align: center;
+
+}
+.product p{
+ text-align: center;
+ padding: 2rem;
+
+}
+.product button{
+    font-size: 13px;
+    font-weight: 600;
+    width: 50%;
+    height: 50px;
+    cursor: pointer;
+    background-color: rgb(50, 50, 197);
+    color: #fff;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow:  0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+}
+.product button:hover{
+    background-color: rgb(32, 32, 151);
+    transition: .2s ease;
+}
+.product-image{
+    padding: 2rem;
+    width: 55%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.loading{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loading img{
+    width: 40px;
+    
+}
+
+#showmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#showmore button{
+
+    font-size: 13px;
+    font-weight: 600;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    background-color: rgb(50, 50, 197);
+    color: #fff;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow:  0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+}
+
+
+
+
+#footer{
+    padding: 2rem;
+    background-color: #0d6efd0d;
+}
+.footer-main  {
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-main h4{
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+}
+.footer-logos{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logos p{
     font-size: 1.5rem;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    &::placeholder{
-        color: #A6ADBA;
-        font-size: 1.2rem;
-        font-weight: 600;
-        font-style: italic;
-    }
-}
-#btn{
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: #A6ADBA;
-    font-weight: 600;
-    background-color: #5d19db;
-    border: none;
-    border-radius: 10px;
-    transition: 0.2s ease-in-out;
-    &:hover{
-        background-color: #7548f0;
-        color: #A6ADBA;
-    }
-    &:active{
-        background-color: #cbd1db;
-        color: #1D2735;
-    }
 }
 
-#phoneList{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* Modal container */
+.modal {
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's on top of other content */
+    overflow: auto; /* Allow vertical scroll if content exceeds height */
+    display: none; /* Flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
-.phone-item{
-    width: 30%;
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
     padding: 20px;
-    margin: 10px auto;
-    text-align: center;
-
-    border-radius: 10px;
-    &>img{
-        border-radius: 12px;
-    }
-    &>h2{
-        margin: 10px 0;
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #A6ADBA;
-    }
-    &>p{
-        margin: 10px 0
-    }
-    &>button{
-        padding: 10px 20px;
-       font-size: 1.2rem;
-        color: #A6ADBA;
-        font-weight: 600;
-        background-color: #5d19db;
-        border: none;
-        border-radius: 10px;
-        &:hover{
-            background-color: #7548f0;
-            color: #A6ADBA;
-        }
-        &:active{
-            background-color: #cbd1db;
-            color: #1D2735;
-        }
-    }
-}
-.phone-image {
-    width: 80%;
-    margin: 0 auto;
-    height: 0px;
-    display: flex;
-    position: relative;
-    top:300px;
-    justify-content: center; 
-    align-items: flex-end; 
-    gap: 20px; 
+    border: 1px solid #888;
+    max-width: 80%; /* Limit width if needed */
+    max-height: 80%; /* Limit height if needed */
+    overflow-y: auto; /* Allow vertical scroll if content exceeds height */
 }
 
-.phone-image .iphon1 {
-    width: 20%; 
-    height: auto; 
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.phone-image .iphon2 {
-    width: 30%; 
-    height: auto; 
-}
-
-footer{
-     width: 100%;
-    background-color: #1D2735;
-}
-.foot{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 100px 0;
-    color: #A6ADBA;
-}
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
-  }
-  
-  #showAllBtn {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: #A6ADBA;
-    font-weight: 600;
-    background-color: #5d19db;
-    border: none;
-    border-radius: 10px;
-    transition: 0.2s ease-in-out;
-    margin: 20px auto;
-    display: block;
-    cursor: pointer;
-  }
-  
-  #showAllBtn:hover {
-    background-color: #7548f0;
-  }
-  
-  #showAllBtn:active {
-    background-color: #cbd1db;
-    color: #1D2735;
-  }
+}
+.closebtn{
+margin-top: .5rem;
+  background-color: red;
+  padding: 1rem;
+  border: transparent;
+  border-radius: 10px;
+  color: white;
 
-
-  
-
-@media (max-width: 770px) {
-    .nav {
-      width: 90%;
-      flex-direction: column;
-      height: auto;
-      & > h2 {
-        font-size: 1.5rem;
-      }
-      & > .nav-btn {
-        width: 100%;
-        margin-top: 10px;
-      }
-    }
-  .hero{
-    height: 80vh;
-  }
-    .herobox {
-      width: 90%;
-      & > h1 {
-        font-size: 2.5rem;
-      }
-      & > p {
-        font-size: 1rem;
-      }
-      & > button {
-        width: 100%;
-      }
-    }
-  
-    .searchbar {
-      width: 90%;
-      padding: 150px 0 20px 0;
-      & > h2 {
-        font-size: 2rem;
-      }
-    }
-  
-    .searchcontainer {
-      flex-direction: column;
-      & > #searchInput {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-      & > #btn {
-        width: 100%;
-      }
-    }
-  
-    #phoneList {
-      flex-direction: column;
-      & > .phone-item {
-        width: 90%;
-      }
-    }
-  
-    .phone-image {
-    
-      top: 50px;
-      & .iphon1 {
-        width: 20%;
-      }
-      & .iphon2 {
-        width: 30%;
-      }
-    }
-  
-    .foot {
-      width: 90%;
-      padding: 50px 0;
-    }
-  }
-  
+}
